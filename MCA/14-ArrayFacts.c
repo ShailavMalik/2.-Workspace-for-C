@@ -56,7 +56,7 @@ int main()
    // Flexible array member
    struct FlexArray
    {
-      int size;
+     int size;
       int data[];
    };
    struct FlexArray *fa = malloc(sizeof(struct FlexArray) + 5 * sizeof(int));
