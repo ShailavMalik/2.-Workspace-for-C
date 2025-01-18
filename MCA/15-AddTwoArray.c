@@ -17,11 +17,11 @@ void getArray(int *arr, int n)
    }
 }
 
-int *addArray(int arr1[], int n1, int arr2[], int n2)
+int *addArray(int arr[],int arr1[], int arr2[],int n)
 {
-   int *arr = (int *)malloc(n1 * sizeof(int));
+   // int *arr = (int *)malloc(n * sizeof(int));
    
-   for (int i = 0; i < n1; i++)
+   for (int i = 0; i < n; i++)
    {
       arr[i] = arr1[i] + arr2[i];
    }
@@ -34,8 +34,9 @@ int main()
    int n1 = sizeof(arr1) / sizeof(int);
    int arr2[] = {-10, -3, -4, -5, -6};
    int n2 = sizeof(arr2) / sizeof(int);
-   int * result=addArray(arr1, n1, arr2, n2);
-   printArray(result, n1);
+   int arr[5];
+   int * result=addArray(arr,arr1,arr2,n1);
+   printArray(arr, n1);
 
    return 0;
 }

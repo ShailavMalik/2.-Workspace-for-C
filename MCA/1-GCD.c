@@ -1,6 +1,6 @@
 // program to find gcd
 #include <stdio.h>
-#include "1-GCD.h"
+// #include "1-GCD.h"
 
 int findMin(int a, int b)
 {
